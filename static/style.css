@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\kanch\OneDrive\Documents\job_recommendation_app\static\images\background_image.jpg'); /* Replace with the URL of your image */
+    
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Container for the form and recommendations */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Label and input fields */
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Table styling for recommended jobs */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Job count display */
+.job-count {
+    font-size: 1.2em;
+    color: #4CAF50;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Fade-in animation for the results */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
